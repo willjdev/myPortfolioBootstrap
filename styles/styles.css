@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "VT323", monospace;
+  background-image: url(../images/Zeldafield.jpg);
+}
+
+.noImage {
+  background-image: none;
+  background: linear-gradient(
+    35deg,
+    rgba(228, 79, 92, 1) 0%,
+    rgba(246, 178, 215, 1) 33%,
+    rgba(203, 62, 198, 1) 66%,
+    rgba(88, 176, 233, 1) 100%
+  );
+}
+
+ul {
+  list-style: none;
+}
+/* ------------- Main Index ------------- */
+.imgKnight {
+  width: 40%;
+}
+.salute {
+  position: relative;
+  width: 21ch;
+  margin-top: 2vmin;
+  font-weight: 400;
+  margin-bottom: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  animation: typing 2s steps(12), blink 0.5s step-end infinite alternate;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.borderSiu {
+  border: solid 4px black;
+}
+
+/* ------------- Main About me ------------- */
+
+.imgProfile {
+  border-radius: 20%;
+  padding-top: 5%;
+}
+.profileText {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 4%;
+  border-radius: 10px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.cssArt {
+  padding-left: 0px;
+}
+.cssArt img {
+  width: 70%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  border-radius: 10px;
+}
+
+/* ------------- Main Tech stack ------------- */
+
+.technologies img {
+  width: 30%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/* ------------- Main Contact ------------- */
+
+.contactText h1,
+.contactText h2 {
+  font-size: 1rem;
+  width: 70%;
+}
+.contactBox {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  margin-bottom: 2%;
+}
+.contactButton {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+/* ------------- Footer ------------- */
+
+footer ul {
+  padding-left: 0px;
+}
+footer h5 {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+footer ul li {
+  width: 10%;
+  text-align: center;
+}
